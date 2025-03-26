@@ -24,20 +24,20 @@ public class Product {
 	private String productManufacturingDate;
 	
 	@Column(name="product_exp_date")
-	private String prdoductExpiryDate;
+	private String productExpiryDate;
 	
 	public Product() {
 		super();
 	}
 
-	public Product(String productId, String productName, int productQuantity, double productPrice, String productManufacturingDate, String prdoductExpiryDate) {
+	public Product(String productId, String productName, int productQuantity, double productPrice, String productManufacturingDate, String productExpiryDate) {
 		super();
 		this.productId = productId;
 		this.productName = productName;
 		this.productQuantity = productQuantity;
 		this.productPrice = productPrice;
 		this.productManufacturingDate = productManufacturingDate;
-		this.prdoductExpiryDate = prdoductExpiryDate;
+		this.productExpiryDate = productExpiryDate;
 	}
 
 	public String getProductId() {
@@ -80,19 +80,19 @@ public class Product {
 		this.productManufacturingDate = productManufacturingDate;
 	}
 
-	public String getPrdoductExpiryDate() {
-		return prdoductExpiryDate;
+	public String getProductExpiryDate() {
+		return productExpiryDate;
 	}
 
-	public void setPrdoductExpiryDate(String prdoductExpiryDate) {
-		this.prdoductExpiryDate = prdoductExpiryDate;
+	public void setProductExpiryDate(String productExpiryDate) {
+		this.productExpiryDate = productExpiryDate;
 	}
 
 	@Override
 	public String toString() {
 		return "Product [productId=" + productId + ", productName=" + productName + ", productQuantity="
 				+ productQuantity + ", productPrice=" + productPrice + ", productManufacturingDate="
-				+ productManufacturingDate + ", prdoductExpiryDate=" + prdoductExpiryDate + "]";
+				+ productManufacturingDate + ", productExpiryDate=" + productExpiryDate + "]";
 	}
 	
 }
