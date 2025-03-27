@@ -30,4 +30,32 @@ public class ProductService {
 		return productDao.updateProduct(product);
 	}
 	
+	public Object getAllProducts() {
+		return productDao.getAllProducts();
+	}
+	
+	public Object getAllProductsInAscOrder(String parameter) {
+		return productDao.getAllProductsInAscOrder(parameter);
+	}
+	
+	public Object getProductById(String productId) {
+		return productDao.getProductById(productId);
+	}
+	
+	public Object getAllProductsAboveSpecifiedPrice(double productPrice) {
+		return productDao.getProductsAboveSpecifiedPrice(productPrice);
+	}
+	
+	public Object getProductsByNamePattern(String pattern) {
+		return productDao.getProductsByNamePattern(pattern);
+	}
+	
+	public Object getProductsWithinPriceRange(double initialPrice, double maxPrice) {
+		return productDao.getProductsWithinPriceRange(initialPrice, maxPrice);
+	}
+	
+	public Object getMaxPriceProduct() {
+		return productDao.getMaxPriceProduct();
+	}
+	
 }
